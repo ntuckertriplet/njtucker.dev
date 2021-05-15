@@ -1,14 +1,31 @@
 import Head from 'next/head'
-import { useColorMode, Heading, Text, Flex, Stack } from '@chakra-ui/react'
+import { useColorMode, Heading, Flex, Stack } from '@chakra-ui/react'
+import { Grid, makeStyles } from '@material-ui/core'
 
 import Container from '../components/Container'
+import Card from '../components/Card'
 
 export default function Portfolio() {
-  const { colorMode } = useColorMode()
-  const colorSecondary = {
-    light: 'gray.700',
-    dark: 'gray.400'
-  }
+
+  const useStyles = makeStyles({
+    root: {
+      minWidth: 275,
+    },
+    bullet: {
+      display: 'inline-block',
+      margin: '0 2px',
+      transform: 'scale(0.8)',
+    },
+    title: {
+      fontSize: 14,
+    },
+    pos: {
+      marginBottom: 12,
+    },
+  });
+
+  const classes = useStyles();
+  
   return (
     <Container>
       <Head>
@@ -16,7 +33,7 @@ export default function Portfolio() {
       </Head>
       <Stack
         as="main"
-        spacing={8}
+        spacing={6}
         justifyContent="center"
         alignItems="flex-start"
         m="0 auto 4rem auto"
@@ -29,7 +46,29 @@ export default function Portfolio() {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading mb={2}>Project Showcase</Heading>
+          <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
+            Project Showcase
+          </Heading>
+          <Grid container spacing={4}>
+            <Grid item xs={11} sm={8} md={4}>
+              <Card />
+            </Grid>
+            <Grid item xs={11} sm={8} md={4}>
+              <Card />
+            </Grid>
+            <Grid item xs={11} sm={8} md={4}>
+              <Card />
+            </Grid>
+            <Grid item xs={11} sm={8} md={4}>
+              <Card />
+            </Grid>
+            <Grid item xs={11} sm={8} md={4}>
+              <Card />
+            </Grid>
+            <Grid item xs={11} sm={8} md={4}>
+              <Card />
+            </Grid>
+          </Grid>
         </Flex>
       </Stack>
     </Container>
