@@ -55,9 +55,9 @@ const Container = ({ children }) => {
                             Home
                         </Button>
                     </NextLink>
-                    <NextLink href="/blog" passHref>
+                    <NextLink href="/portfolio" passHref>
                         <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                            Blog
+                            Portfolio
                         </Button>
                     </NextLink>
                     <NextLink href="/resume" passHref>
@@ -65,9 +65,9 @@ const Container = ({ children }) => {
                             Resume
                         </Button>
                     </NextLink>
-                    <NextLink href="/portfolio" passHref>
+                    <NextLink href="/blog" passHref>
                         <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                            Portfolio
+                            Blog
                         </Button>
                     </NextLink>
                 </Box>

@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
       <ColorModeProvider
         options={{
           initialColorMode: "light",
-          useSystemColorMode: true,
+          useSystemColorMode: false,
         }}
       >
         <GlobalStyle>

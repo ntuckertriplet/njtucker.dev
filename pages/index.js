@@ -30,7 +30,7 @@ export default function Index() {
           maxWidth="700px"
         >
           <Heading mb={2}>Hi, I'm Nate Tucker!</Heading>
-          <Text color={colorSecondary[colorMode]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante nunc, finibus sit amet purus quis, congue vulputate ipsum. Phasellus lobortis bibendum orci, quis imperdiet lectus imperdiet porttitor.</Text>
+          <Text color={colorSecondary[colorMode]}>Thanks for deciding to check out my site! While you're here, I invite you to check out my project showcase or take a look at my resume. In JSON format or PDF version, take your pick! You can also see my Blog and hear all about my ventures in homelabs, networking, servers, and spending too much money on things I will never regret. I also talk about my ventures home theater and audio as well as audio production and mixing, if that interests you. So take a look around!</Text>
         </Flex>
       </Stack>
     </Container>

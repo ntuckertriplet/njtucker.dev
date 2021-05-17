@@ -1,31 +1,18 @@
 import Head from 'next/head'
-import { useColorMode, Heading, Flex, Stack } from '@chakra-ui/react'
-import { Grid, makeStyles } from '@material-ui/core'
+import { useColorMode, Heading, Flex, Stack, List, ListItem, IconButton, Text, Link }  from '@chakra-ui/react'
+import { GitHub } from '@material-ui/icons'
 
 import Container from '../components/Container'
-import Card from '../components/Card'
+import { projects } from '../data/projects'
 
 export default function Portfolio() {
 
-  const useStyles = makeStyles({
-    root: {
-      minWidth: 275,
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 12,
-    },
-  });
+  const { colorMode } = useColorMode();
+  const secondaryTextColor = {
+    light: "rgba(0,0,0,.9)",
+    dark: "gray.400",
+  };
 
-  const classes = useStyles();
-  
   return (
     <Container>
       <Head>
@@ -34,7 +21,6 @@ export default function Portfolio() {
       <Stack
         as="main"
         spacing={6}
-        justifyContent="center"
         alignItems="flex-start"
         m="0 auto 4rem auto"
         maxWidth="700px"
@@ -46,29 +32,68 @@ export default function Portfolio() {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
+          <Heading letterSpacing="tight" mb={4} as="h2">
             Project Showcase
           </Heading>
-          <Grid container spacing={4}>
-            <Grid item xs={11} sm={8} md={4}>
-              <Card />
-            </Grid>
-            <Grid item xs={11} sm={8} md={4}>
-              <Card />
-            </Grid>
-            <Grid item xs={11} sm={8} md={4}>
-              <Card />
-            </Grid>
-            <Grid item xs={11} sm={8} md={4}>
-              <Card />
-            </Grid>
-            <Grid item xs={11} sm={8} md={4}>
-              <Card />
-            </Grid>
-            <Grid item xs={11} sm={8} md={4}>
-              <Card />
-            </Grid>
-          </Grid>
+          <List w="100%">
+            {projects.map((project) => (
+              <>
+                <ListItem py={2}>
+                  <Flex alignItems="center" justifyContent="space-between">
+                    <Flex alignItems="center" fontWeight={100}>
+                      <Link
+                        _hover={{ textDecoration: "none" }}
+                        href={`./projects/${project.name
+                          .toLowerCase()
+                          .replace(/ +/g, "")}`}
+                      >
+                        <Flex alignItems="center" fontWeight={100}>
+                          <Text fontSize="2xl" mr="0.5em">
+                            {project.icon}
+                          </Text>
+                          <Text
+                            fontWeight={400}
+                            fontSize="lg"
+                            lineHeight="shorter"
+                            w={["3em", "5em", "8em"]}
+                          >
+                            {project.name}
+                          </Text>
+                        </Flex>
+                      </Link>
+                      <Text
+                        display={["none", "none", "block"]}
+                        pl="1em"
+                        pr="2em"
+                        color={secondaryTextColor[colorMode]}
+                        w="full"
+                      >
+                        {project.description}
+                      </Text>
+                    </Flex>
+                    <Flex>
+                      {project.hasOwnProperty("source") ? (
+                        <Link
+                          _hover={{ textDecoration: "none" }}
+                          href={project.source}
+                          isExternal
+                        >
+                          <IconButton
+                            aria-label="Github"
+                            size="lg"
+                            color="blue.500"
+                            variant="ghost"
+                          >
+                              <GitHub fontSize="small"/>
+                          </IconButton>
+                        </Link>
+                      ) : null}
+                    </Flex>
+                  </Flex>
+                </ListItem>
+              </>
+            ))}
+          </List>
         </Flex>
       </Stack>
     </Container>

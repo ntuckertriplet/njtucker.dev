@@ -1,5 +1,5 @@
 import { Link, Flex, IconButton } from "@chakra-ui/react";
-import { Code, Business, Email } from '@material-ui/icons'
+import { GitHub, LinkedIn, Email } from '@material-ui/icons'
 
 const Footer = () => (
     <Flex justify="center">
@@ -10,7 +10,7 @@ const Footer = () => (
           color="gray.500"
           variant="ghost"
         >
-            <Code />
+            <GitHub fontSize="small"/>
         </IconButton>
       </Link>
       <Link
@@ -24,7 +24,7 @@ const Footer = () => (
           color="gray.500"
           variant="ghost"
         >
-            <Business />
+            <LinkedIn fontSize="small"/>
         </IconButton>
       </Link>
       <Link href="mailto:ntuckertriplet@gmail.com" title="Email" isExternal>
@@ -34,7 +34,7 @@ const Footer = () => (
           color="gray.500"
           variant="ghost"
         >
-            <Email />
+            <Email fontSize="small"/>
         </IconButton>
       </Link>
     </Flex>
