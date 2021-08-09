@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import { useColorMode, Heading, Flex, Stack, List, ListItem, IconButton, Text, Link }  from '@chakra-ui/react'
-import { GitHub } from '@material-ui/icons'
+import { Flex, Heading, IconButton, Link, List, ListItem, Stack, Text, useColorMode }  from '@chakra-ui/react'
 
 import Container from '../components/Container'
+import { GitHub } from '@material-ui/icons'
+import Head from 'next/head'
 import { projects } from '../data/projects'
 
 export default function Portfolio() {
@@ -41,12 +41,6 @@ export default function Portfolio() {
                 <ListItem py={2}>
                   <Flex alignItems="center" justifyContent="space-between">
                     <Flex alignItems="center" fontWeight={100}>
-                      <Link
-                        _hover={{ textDecoration: "none" }}
-                        href={`./projects/${project.name
-                          .toLowerCase()
-                          .replace(/ +/g, "")}`}
-                      >
                         <Flex alignItems="center" fontWeight={100}>
                           <Text fontSize="2xl" mr="0.5em">
                             {project.icon}
@@ -60,7 +54,6 @@ export default function Portfolio() {
                             {project.name}
                           </Text>
                         </Flex>
-                      </Link>
                       <Text
                         display={["none", "none", "block"]}
                         pl="1em"

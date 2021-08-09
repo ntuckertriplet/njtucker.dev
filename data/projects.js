@@ -5,6 +5,11 @@ export const projects = [
       source: "https://github.com/ntuckertriplet/njtucker.xyz",
     },
     {
+      name: "C Data Strutures Library",
+      description: "A completely generic and portable data structures library for projects in the future",
+      source: "https://github.com/ntuckertriplet/libdatastructures"
+    },
+    {
       name: "QuestBoard",
       description: "A game-ified Kanban board based on a points rewards system for completing tasks",
       source: "https://github.com/Quest-Board",
