@@ -1,18 +1,19 @@
-import React from "react";
 import {
-  Text,
-  Stack,
-  Divider,
   Box,
-  Heading,
   Button,
-  Link,
+  Divider,
   Flex,
+  Heading,
+  Link,
   List,
   ListItem,
+  Stack,
+  Text,
 } from "@chakra-ui/react";
-import { parseISO, format } from "date-fns";
+import { format, parseISO } from "date-fns";
+
 import Container from "../components/Container";
+import React from "react";
 
 function Resume({ data }) {
   return (
@@ -30,7 +31,7 @@ function Resume({ data }) {
         <Stack isInline>
           <Link
             _hover={{ textDecoration: "none" }}
-            href="https://gist.githubusercontent.com/ntuckertriplet/1dfb7279cf4512603552574f6f20fa27/raw/6c72b1db88c37175714a4587263b449a198865f4/resume.json"
+            href="https://gist.githubusercontent.com/ntuckertriplet/1dfb7279cf4512603552574f6f20fa27/raw/32c9b6c4e7aa290c7ebf6fd4e4d6790ffc9324d9/resume.json"
             download
           >
             <Button>JSON</Button>
@@ -213,7 +214,7 @@ function Resume({ data }) {
 
 Resume.getInitialProps = async () => {
   const res = await fetch(
-    "https://gist.githubusercontent.com/ntuckertriplet/1dfb7279cf4512603552574f6f20fa27/raw/6c72b1db88c37175714a4587263b449a198865f4/resume.json"
+    "https://gist.githubusercontent.com/ntuckertriplet/1dfb7279cf4512603552574f6f20fa27/raw/32c9b6c4e7aa290c7ebf6fd4e4d6790ffc9324d9/resume.json"
   );
   const json = await res.json();
   return { data: json };
