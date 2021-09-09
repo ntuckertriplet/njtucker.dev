@@ -31,7 +31,7 @@ function Resume({ data }) {
         <Stack isInline>
           <Link
             _hover={{ textDecoration: "none" }}
-            href="https://gist.githubusercontent.com/ntuckertriplet/1dfb7279cf4512603552574f6f20fa27/raw/32c9b6c4e7aa290c7ebf6fd4e4d6790ffc9324d9/resume.json"
+            href="https://gist.githubusercontent.com/ntuckertriplet/1dfb7279cf4512603552574f6f20fa27/raw/58c3e537d5ff71012dedbfd71515e58375cf30ea/resume.json"
             download
           >
             <Button>JSON</Button>
@@ -214,7 +214,7 @@ function Resume({ data }) {
 
 Resume.getInitialProps = async () => {
   const res = await fetch(
-    "https://gist.githubusercontent.com/ntuckertriplet/1dfb7279cf4512603552574f6f20fa27/raw/32c9b6c4e7aa290c7ebf6fd4e4d6790ffc9324d9/resume.json"
+    "https://gist.githubusercontent.com/ntuckertriplet/1dfb7279cf4512603552574f6f20fa27/raw/58c3e537d5ff71012dedbfd71515e58375cf30ea/resume.json"
   );
   const json = await res.json();
   return { data: json };
