@@ -14,6 +14,9 @@
     "@emotion/styled": "^11.0.0",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
+    "@types/node": "^16.10.9",
+    "@types/react": "^17.0.29",
+    "@types/react-dom": "^17.0.9",
     "date-fns": "^2.16.1",
     "framer-motion": "^3.2.1",
     "gray-matter": "^4.0.2",
@@ -29,6 +32,7 @@
     "remark-autolink-headings": "^6.0.1",
     "remark-capitalize": "^1.1.0",
     "remark-code-titles": "^0.1.1",
-    "remark-slug": "^6.0.0"
+    "remark-slug": "^6.0.0",
+    "typescript": "^4.4.4"
   }
 }
