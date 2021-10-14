@@ -1,12 +1,21 @@
-import { Flex, Heading, IconButton, Link, List, ListItem, Stack, Text, useColorMode }  from '@chakra-ui/react'
+import {
+  Flex,
+  Heading,
+  IconButton,
+  Link,
+  List,
+  ListItem,
+  Stack,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
 
-import Container from '../components/Container'
-import { GitHub } from '@material-ui/icons'
-import Head from 'next/head'
-import { projects } from '../data/projects'
+import Container from "../components/Container";
+import { GitHub } from "@material-ui/icons";
+import Head from "next/head";
+import { projects } from "../data/projects";
 
 export default function Portfolio() {
-
   const { colorMode } = useColorMode();
   const secondaryTextColor = {
     light: "rgba(0,0,0,.9)",
@@ -41,19 +50,16 @@ export default function Portfolio() {
                 <ListItem py={2}>
                   <Flex alignItems="center" justifyContent="space-between">
                     <Flex alignItems="center" fontWeight={100}>
-                        <Flex alignItems="center" fontWeight={100}>
-                          <Text fontSize="2xl" mr="0.5em">
-                            {project.icon}
-                          </Text>
-                          <Text
-                            fontWeight={400}
-                            fontSize="lg"
-                            lineHeight="shorter"
-                            w={["3em", "5em", "8em"]}
-                          >
-                            {project.name}
-                          </Text>
-                        </Flex>
+                      <Flex alignItems="center" fontWeight={100}>
+                        <Text
+                          fontWeight={400}
+                          fontSize="lg"
+                          lineHeight="shorter"
+                          w={["3em", "5em", "8em"]}
+                        >
+                          {project.name}
+                        </Text>
+                      </Flex>
                       <Text
                         display={["none", "none", "block"]}
                         pl="1em"
@@ -77,7 +83,7 @@ export default function Portfolio() {
                             color="blue.500"
                             variant="ghost"
                           >
-                              <GitHub fontSize="small"/>
+                            <GitHub fontSize="small" />
                           </IconButton>
                         </Link>
                       ) : null}
@@ -90,5 +96,5 @@ export default function Portfolio() {
         </Flex>
       </Stack>
     </Container>
-  )
+  );
 }
