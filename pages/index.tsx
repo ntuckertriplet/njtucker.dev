@@ -11,9 +11,7 @@ export default function Index() {
   };
   return (
     <Container>
-      <Head>
-        <title>Home - Nathan Tucker</title>
-      </Head>
+      <Head>Home - Nathan Tucker</Head>
       <Stack
         as="main"
         spacing={8}

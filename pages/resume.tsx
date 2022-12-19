@@ -144,7 +144,7 @@ function Resume({ data }) {
               </Flex>
               <List styleType="disc" pr={5}>
                 {data.highlights.map((data) => (
-                  <ListItem>{data}</ListItem>
+                  <ListItem key={data}>{data}</ListItem>
                 ))}
               </List>
             </Flex>
