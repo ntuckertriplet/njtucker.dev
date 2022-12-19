@@ -1,6 +1,6 @@
 import { Flex, Heading, Stack, Text, useColorMode } from "@chakra-ui/react";
 
-import Container from "../components/Container";
+import Container from "../components/container";
 import Head from "next/head";
 
 export default function Index() {

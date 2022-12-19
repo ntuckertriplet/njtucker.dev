@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { format, parseISO } from "date-fns";
 
-import Container from "../components/Container";
+import Container from "../components/container";
 import React from "react";
 
 function Resume({ data }) {

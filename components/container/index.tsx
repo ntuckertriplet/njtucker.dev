@@ -1,7 +1,7 @@
 import { Box, Button, Flex, useColorMode } from "@chakra-ui/react";
 
-import DarkModeSwitch from "./DarkModeSwitch";
-import Footer from "./Footer";
+import DarkModeSwitch from "../dark-mode-switch";
+import Footer from "../footer";
 import NextLink from "next/link";
 import React from "react";
 import styled from "@emotion/styled";

@@ -10,7 +10,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 
-import Container from "../components/Container";
+import Container from "../components/container";
 import { GitHub } from "@material-ui/icons";
 import Head from "next/head";
 import { projects } from "../data/projects";
