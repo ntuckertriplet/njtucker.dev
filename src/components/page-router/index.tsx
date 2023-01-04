@@ -6,7 +6,7 @@ import Home from "../../pages/home";
 import Portfolio from "../../pages/portfolio";
 import Resume from "../../pages/resume";
 
-export const PageRouter = (): JSX.Element => {
+const PageRouter = (): JSX.Element => {
   return (
     <BrowserRouter>
       <Routes>
@@ -19,3 +19,5 @@ export const PageRouter = (): JSX.Element => {
     </BrowserRouter>
   );
 };
+
+export default PageRouter;

@@ -1,10 +1,12 @@
 import ColorProvider from "../color-provider";
 import { CssBaseline } from "@mui/material";
-import { PageRouter } from "../page-router";
+import GlobalStyle from "../global-styles";
+import PageRouter from "../page-router";
 
 const App = () => {
   return (
     <ColorProvider>
+      <GlobalStyle />
       <CssBaseline />
       <PageRouter />
     </ColorProvider>

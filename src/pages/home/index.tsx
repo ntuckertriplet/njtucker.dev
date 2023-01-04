@@ -13,7 +13,7 @@ const Home = () => {
           Hello, if you're seeing this message, that means the site is currently
           under construction! Come back in a little and it will be much better
           and with more information. In the meantime, feel free to check out the
-          links below!.
+          links below!
         </Typography>
       </Box>
     </PageContainer>
