@@ -1,13 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
-* {
-    transition: all .3s;
-}
+const GlobalStyles = createGlobalStyle`
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
 
-body {
-    transition: all .3s;
-}
-`;
+  body {
+    transition: all 150ms linear;
+  }`;
 
-export default GlobalStyle;
+export default GlobalStyles;
