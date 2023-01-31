@@ -1,10 +1,15 @@
-import { Box, Grid, IconButton, Link } from "@mui/material";
+import { Box, Grid, IconButton, Link, styled } from "@mui/material";
 import { Email, GitHub, LinkedIn } from "@mui/icons-material";
 
 const Footer = () => {
+  const StickyFooter = styled(Box)`
+    position: fixed;
+    bottom: 0;
+  `;
+
   return (
-    <Box sx={{ m: 2 }}>
-      <Grid container spacing={6} columns={3}>
+    <StickyFooter sx={{ p: 4 }}>
+      <Grid container spacing={6} columns={3} alignItems="center">
         <Grid item>
           <IconButton
             LinkComponent={Link}
@@ -39,7 +44,7 @@ const Footer = () => {
           </IconButton>
         </Grid>
       </Grid>
-    </Box>
+    </StickyFooter>
   );
 };
 

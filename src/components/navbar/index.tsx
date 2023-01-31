@@ -1,20 +1,18 @@
-import { Box, styled } from "@mui/material";
-
 import ColorToggleButton from "../color-toggle-button";
+import { Grid } from "@mui/material";
 
 const Navbar = () => {
-  const StickyNav = styled(Box)`
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    backdrop-filter: saturate(180%) blur(20px);
-    transition: height 0.5s, line-height 0.5s;
-  `;
-
   return (
-    <StickyNav sx={{ p: 4 }}>
-      <ColorToggleButton />
-    </StickyNav>
+    <Grid
+      container
+      justifyContent="flex-end"
+      spacing={1}
+      style={{ position: "sticky", top: 0 }}
+    >
+      <Grid item p={3} m={3}>
+        <ColorToggleButton />
+      </Grid>
+    </Grid>
   );
 };
 
