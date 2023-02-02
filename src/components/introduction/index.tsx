@@ -6,14 +6,12 @@ const Introduction = () => {
   return (
     <Grid
       container
-      direction="row"
       justifyContent="space-between"
       alignItems="center"
-      spacing={12}
       maxWidth="1500px"
     >
       <Grid item xs={6}>
-        <Grid container direction="column" spacing={2}>
+        <Grid container spacing={2}>
           <Grid item>
             <Typography variant="h4" sx={{ fontWeight: "bold" }}>
               Hello, I'm Nate Tucker!
@@ -35,14 +33,17 @@ const Introduction = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item>
         <Grid container justifyContent="center" alignItems="center">
           <Grid item>
             <Box
               component="img"
-              sx={{ height: "100%", width: "100%" }}
+              sx={{
+                maxHeight: { xs: 300, md: 600 },
+                maxWidth: { xs: 400, md: 750 },
+              }}
+              alt="TypeScript code snippet"
               src={Carbon}
-              alt="carbon"
             />
           </Grid>
         </Grid>
