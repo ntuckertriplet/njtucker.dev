@@ -10,7 +10,7 @@ const Introduction = () => {
       justifyContent="space-between"
       alignItems="center"
       spacing={12}
-      width="80%"
+      maxWidth="1500px"
     >
       <Grid item xs={6}>
         <Grid container direction="column" spacing={2}>
