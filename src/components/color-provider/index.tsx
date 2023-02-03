@@ -2,7 +2,6 @@ import { Theme, ThemeProvider, createTheme } from "@mui/material/styles";
 
 import ColorContext from "../../context/color-context";
 import { ColorProviderProps } from "./color-provider.props";
-import GlobalStyles from "../global-styles";
 import { useState } from "react";
 
 const ColorProvider = ({ children }: ColorProviderProps) => {
@@ -31,10 +30,7 @@ const ColorProvider = ({ children }: ColorProviderProps) => {
     <ColorContext.Provider
       value={{ mode: colorMode, toggleColorMode: toggleFunction }}
     >
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        {children}
-      </ThemeProvider>
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ColorContext.Provider>
   );
 };

@@ -22,10 +22,8 @@ const Introduction = (): JSX.Element => {
         </Typography>
       </Grid>
       <Grid item>
-        <Grid container justifyContent="center" alignItems="center">
+        <Grid container>
           <Box
-            justifyContent="center"
-            alignItems="center"
             component="img"
             sx={{
               maxHeight: { xs: 300, md: 600 },
