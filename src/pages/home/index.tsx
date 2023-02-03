@@ -5,12 +5,9 @@ import PageContainer from "../../components/page-container/page-container";
 const Home = () => {
   return (
     <PageContainer>
-      <Grid item height="100vh">
+      <Grid container justifyContent="center" alignItems="center">
         <Introduction />
       </Grid>
-      {/* <Grid item height="80vh">
-        <ProjectGrid />
-      </Grid> */}
     </PageContainer>
   );
 };

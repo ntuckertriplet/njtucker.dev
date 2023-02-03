@@ -1,18 +1,28 @@
-import ColorToggleButton from "../color-toggle-button";
-import { Grid } from "@mui/material";
+import { Box, Grid, Paper, styled } from "@mui/material";
 
-const Navbar = () => {
+import ColorToggleButton from "../color-toggle-button";
+
+const Navbar = (): JSX.Element => {
+  const StickyNav = styled(Box)`
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  `;
   return (
-    <Grid
-      container
-      justifyContent="flex-end"
-      spacing={1}
-      style={{ position: "sticky", top: 0 }}
-    >
-      <Grid item p={3} m={3}>
-        <ColorToggleButton />
-      </Grid>
-    </Grid>
+    <StickyNav>
+      <Paper elevation={8}>
+        <Grid
+          container
+          justifyContent="flex-end"
+          spacing={1}
+          style={{ position: "sticky", top: 0 }}
+        >
+          <Grid item p={1} m={1}>
+            <ColorToggleButton />
+          </Grid>
+        </Grid>
+      </Paper>
+    </StickyNav>
   );
 };
 
