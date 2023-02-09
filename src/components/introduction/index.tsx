@@ -5,7 +5,7 @@ import Carbon from "./carbon.png";
 const Introduction = (): JSX.Element => {
   return (
     <Grid container alignItems="center" maxWidth="1500px" m={15}>
-      <Grid item xs={12} sm={6}>
+      <Grid item xs={12} sm={6} p={2}>
         <Typography variant="h4" fontWeight="bold" gutterBottom>
           Hello, I'm Nate Tucker!
         </Typography>
