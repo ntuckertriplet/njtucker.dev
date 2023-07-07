@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <NavBar />
-      {children}
+      <div className="flex justify-center">{children}</div>
       <Footer />
     </>
   );

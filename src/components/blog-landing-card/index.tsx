@@ -1,16 +1,15 @@
 import Link from "next/link";
 
-type HomePageCardProps = {
+type BlogLandingCardProps = {
   title: string;
   content: string;
   link: string;
-  bgimage: string;
 };
 
-const HomePageCard = ({ title, content, link, bgimage }: HomePageCardProps) => {
+const BlogLandingCard = ({ title, content, link }: BlogLandingCardProps) => {
   return (
     <Link href={`/blog/${link}`}>
-      <div className="flex flex-col rounded-lg shadow-md w-80 m-6 overflow-hidden bg-no-repeat bg-cover bg-center">
+      <div className="flex flex-col bg-neutral-100 hover:bg-slate-200 rounded-lg shadow-md m-6 overflow-hidden">
         <h5 className="mb-2 text-xl font-medium leading-tight p-4 m-2 text-center">
           {title}
         </h5>
@@ -20,4 +19,4 @@ const HomePageCard = ({ title, content, link, bgimage }: HomePageCardProps) => {
   );
 };
 
-export default HomePageCard;
+export default BlogLandingCard;

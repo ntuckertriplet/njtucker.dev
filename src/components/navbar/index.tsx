@@ -33,6 +33,14 @@ const NavBar = () => {
                 Resume
               </Link>
             </li>
+            <li>
+              <Link
+                href="/blog"
+                className="block py-2 pl-3 pr-4 rounded md:bg-transparent"
+              >
+                Blog Posts
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
