@@ -4,10 +4,9 @@ type HomePageCardProps = {
   title: string;
   content: string;
   link: string;
-  bgimage: string;
 };
 
-const HomePageCard = ({ title, content, link, bgimage }: HomePageCardProps) => {
+const HomePageCard = ({ title, content, link }: HomePageCardProps) => {
   return (
     <Link href={`/blog/${link}`}>
       <div className="flex flex-col rounded-lg shadow-md w-80 m-6 overflow-hidden bg-no-repeat bg-cover bg-center">

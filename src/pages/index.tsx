@@ -20,7 +20,6 @@ export default function Home() {
               title={c.title}
               content={c.content}
               link={c.link}
-              bgimage={c.bgimage}
             />
           );
         })}
