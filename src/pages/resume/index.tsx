@@ -12,7 +12,7 @@ const Page = () => {
   const resumeData = getResumeInfo();
 
   return (
-    <div className="m-6 w-1/2">
+    <div className="m-6 w-3/4">
       <h1 className="text-5xl mt-8">{resumeData.basics.name}</h1>
       <div>
         {resumeData.basics.location.city} | {resumeData.basics.profiles[1].url}{" "}
