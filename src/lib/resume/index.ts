@@ -27,22 +27,20 @@ export const getResumeInfo = () => {
       {
         company: "Wellmark BCBS",
         position: "Software Engineer",
-        location: "Des Moines, IA",
-        website: "lockheedmartin.com",
+        website: "https://wellmark.com",
         startDate: "2023-02-20",
         endDate: "",
         highlights: [
-          "Researched and developed network-level protocols for devices to interact with, focusing on extreme modularity and adaptability",
-          "Built on top of existing code frameworks to develop user interfaces in Lua and OpenGL",
+          "Support enterprise-wide authentication platforms and develop new, improved solutions",
+          "Migrate existing software to the cloud in AWS, or reimplement as needed",
           "Worked in an Agile environment, releasing often to customers for software review and revision",
-          "Interfaced with external companies to ensure alignment of goals",
+          "Created SSO SAML integrations for dozens of clients to utilize Wellmark as their SSO provider",
         ],
       },
       {
         company: "Lockheed Martin Skunkworks",
         position: "Software Engineer Associate",
-        location: "Fort Worth, TX",
-        website: "lockheedmartin.com",
+        website: "https://lockheedmartin.com",
         startDate: "2022-06-20",
         endDate: "2023-02-16",
         highlights: [
@@ -55,7 +53,6 @@ export const getResumeInfo = () => {
       {
         company: "NCS Pearson",
         position: "SRE Intern/React Developer",
-        location: "San Antonio, TX",
         website: "https://pearson.com/",
         startDate: "2021-06-01",
         endDate: "2021-10-01",
@@ -68,7 +65,6 @@ export const getResumeInfo = () => {
       {
         company: "NCS Pearson",
         position: "Security Engineering Intern",
-        location: "Iowa City, IA",
         website: "https://pearson.com/",
         startDate: "2020-06-01",
         endDate: "2020-08-14",
@@ -82,7 +78,6 @@ export const getResumeInfo = () => {
       {
         company: "NCS Pearson",
         position: "SecOps Intern",
-        location: "Iowa City, IA",
         website: "https://pearson.com/",
         startDate: "2019-06-01",
         endDate: "2019-09-14",
@@ -96,8 +91,7 @@ export const getResumeInfo = () => {
       {
         company: "ISEAGE Research Lab",
         position: "Research Lab Assistant",
-        location: "Ames, IA",
-        website: "iseage.org",
+        website: "https://cdc.iseage.org",
         startDate: "2019-06-01",
         endDate: "2022-05-01",
         highlights: [
@@ -140,7 +134,7 @@ export const getResumeInfo = () => {
       },
       {
         name: "LEGv8 Disassembler",
-        type: "Class Project",
+        type: "School Project",
         description:
           "Python project to read in assembled and linked machine code and convert it back (as best as possible) to LEGv8 assembly, a slimmer version of ARM.",
       },
@@ -153,27 +147,6 @@ export const getResumeInfo = () => {
         startDate: "2018-08-01",
         endDate: "2022-05-01",
         gpa: "3.34",
-      },
-    ],
-    leadership: [
-      {
-        organization: "Iowa State Information Assurance Student Group",
-        position: "Treasurer",
-        startDate: "2020-08-18",
-        endDate: "2022-05-20",
-        highlights: [
-          "Managing finances and procurement of club and ISEAGE lab purchases and procurements.",
-        ],
-      },
-      {
-        organization: "ISEAGE Research Lab",
-        position: "Director",
-        startDate: "2019-01-24",
-        endDate: "2022-05-20",
-        highlights: [
-          "Organized development and goings of cyber defense of a team of 8 students",
-          "Ensured on-time delivery of 5 competitions a year and large-scale overhaul of lab during summer downtime",
-        ],
       },
     ],
     awards: [
@@ -227,12 +200,6 @@ export const getResumeInfo = () => {
           "AWS Appsync",
           "AWS API Gateway",
         ],
-      },
-    ],
-    languages: [
-      {
-        language: "English",
-        fluency: "Native speaker",
       },
     ],
   };
