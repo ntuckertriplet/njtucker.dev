@@ -19,14 +19,6 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                href="/about"
-                className="block py-2 pl-3 pr-4 rounded md:bg-transparent"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/resume"
                 className="block py-2 pl-3 pr-4 rounded md:bg-transparent"
               >
@@ -38,7 +30,7 @@ const NavBar = () => {
                 href="/resume"
                 className="block py-2 pl-3 pr-4 rounded md:bg-transparent"
               >
-                Blog Posts
+                Blog
               </Link>
             </li>
           </ul>
