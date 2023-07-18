@@ -76,6 +76,10 @@ const Page = () => {
                   return <li>{h}</li>;
                 })}
               </ul>
+              <div className="mt-1">
+                <strong className="font-bold">Technologies Used</strong>:{" "}
+                {p.technologies.join(", ")}
+              </div>
             </div>
           );
         })}

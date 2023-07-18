@@ -64,28 +64,17 @@ export const getResumeInfo = () => {
       },
       {
         company: "NCS Pearson",
-        position: "Security Engineering Intern",
-        website: "https://pearson.com/",
-        startDate: "2020-06-01",
-        endDate: "2020-08-14",
-        highlights: [
-          "Saved 10-15 hrs/week by making creating Django + Celery tool to centralize information from Acunetix, Blackduck, and Checkmarx",
-          "Utilize AWS Console as well as AWS CLI to interact with and secure AWS instances, later used python scripts with boto3",
-          "Automate security infrastructure and deployment with Terraform and Cloudformation templates",
-          "Experiment with open source penetration testing tools and frameworks to exploit vulnerabilities",
-        ],
-      },
-      {
-        company: "NCS Pearson",
         position: "SecOps Intern",
         website: "https://pearson.com/",
         startDate: "2019-06-01",
-        endDate: "2019-09-14",
+        endDate: "2020-08-14",
         highlights: [
+          "Saved 10-15 hrs/week by making creating Django + Celery tool to centralize information from Acunetix, Blackduck, and Checkmarx",
           "Create and utilize tools to automate mass scanning of Pearson assets, conduct manual vulnerability assessments based on the results",
-          "Work to create policy and compliance rules, and mitigate threats and vulnerabilities against Pearson and its assets",
+          "Utilize AWS Console as well as AWS CLI to interact with and secure AWS instances, later used python scripts with boto3",
+          "Automate security infrastructure and deployment with Terraform and Cloudformation templates",
+          "Experiment with open source penetration testing tools and frameworks to exploit vulnerabilities",
           "Use vulnerability and networking analysis tools such as OWASP ZAP Web App fuzzer, Burpsuite, Wireshark, and command line utilities",
-          "Utilization of AWS console and tools to defend and secure EC2, S3, and virtual machines",
         ],
       },
       {
@@ -111,6 +100,7 @@ export const getResumeInfo = () => {
           "Built with pygame for UI, uses a DualSense Playstation controller as the user input",
           "Processes and displays status of Air Vehicle sent via a custom network protocol based on RTP",
         ],
+        technologies: ["Python", "pygame", "UI/UX", "Packet design", "Arduino"],
       },
       {
         name: "State-Space Design and Methods",
@@ -120,6 +110,7 @@ export const getResumeInfo = () => {
           "Applied in C/C++ programming in toy examples, and in real-world model rocketry and UAVs",
           "Developed/tuned Kalman Filters to ensure accurate spacial awareness given GPS, Accelerometer, and IMU sensors",
         ],
+        technologies: ["C/C++", "Arduino", "I2C Bus", "SPI Bus"],
       },
       {
         name: "Air Vehicle Avionics",
@@ -130,12 +121,27 @@ export const getResumeInfo = () => {
           "Arduino-compatible code written to communicate with sensors over I2C, SPI, and Serial over RF between AV and Ground Station",
           "Software written using concepts learned from State-Space Design and Methods",
         ],
+        technologies: [
+          "KiCad PCB Design",
+          "Circuit Design",
+          "Fusion 360",
+          "Arduino",
+          "C/C++",
+          "I2C Bus",
+          "SPI Bus",
+          "Kalman Filtering",
+        ],
       },
       {
         name: "libdatastructures",
         type: "Personal Project",
         highlights: [
           "A statically compiled, generic data structures library for me to use in later projects",
+        ],
+        technologies: [
+          "C/C++",
+          "Static library packaging/distribution",
+          "Memory-management",
         ],
       },
       {
@@ -145,6 +151,14 @@ export const getResumeInfo = () => {
           "An app that allows the party to vote on the next song",
           "Built on top of ASP.NET Core in C# with PostgreSQL/Entity Framework as the backing database with a Redis cache layer",
         ],
+        technologies: [
+          "ASP.NET Core",
+          "C#",
+          "DB Admin",
+          "PostgreSQL",
+          "Redis",
+          "Entity Framework",
+        ],
       },
       {
         name: "QuestBoard",
@@ -152,6 +166,14 @@ export const getResumeInfo = () => {
         highlights: [
           "A kanban-style board with a gameified twist to increase fun and productivity",
           "Built on top of ASP.NET Core in C# with PostgreSQL/Entity Framework as the backing database",
+        ],
+        technologies: [
+          "ASP.NET Core",
+          "C#",
+          "DB Admin",
+          "PostgreSQL",
+          "Entity Framework",
+          "JSON API Design",
         ],
       },
       {
@@ -161,12 +183,28 @@ export const getResumeInfo = () => {
           "This is the repo for my public site that you are viewing right now!",
           "Built using TS/NextJS/Tailwind CSS and deployed on Vercel",
         ],
+        technologies: [
+          "Next JS",
+          "React JS",
+          "TypeScript",
+          "JavaScript",
+          "Material UI",
+          "Tailwind CSS",
+          "Vercel",
+        ],
       },
       {
         name: "LEGv8 Disassembler",
         type: "School Project",
         highlights: [
           "Python project to read in assembled and linked machine code and convert it back (as best as possible) to LEGv8 assembly, a slimmer version of ARM.",
+        ],
+        technologies: [
+          "ARM",
+          "LEGv8",
+          "Python",
+          "Assembly",
+          "Reverse Engineering",
         ],
       },
     ],
