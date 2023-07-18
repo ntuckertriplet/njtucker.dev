@@ -106,37 +106,68 @@ export const getResumeInfo = () => {
       {
         name: "Ground Station",
         type: "Personal Project",
-        description:
-          "A custom-made Ground Station, communication protocol, and avionics for a homemade and homebuilt drone.",
+        highlights: [
+          "A custom-made Ground Station for a homemade and homebuilt drone and for amateur high-power rockets",
+          "Built with pygame for UI, uses a DualSense Playstation controller as the user input",
+          "Processes and displays status of Air Vehicle sent via a custom network protocol based on RTP",
+        ],
+      },
+      {
+        name: "State-Space Design and Methods",
+        type: "Personal Project",
+        highlights: [
+          "A series of instruction and applied projects to experiment with and learn state-space design",
+          "Applied in C/C++ programming in toy examples, and in real-world model rocketry and UAVs",
+          "Developed/tuned Kalman Filters to ensure accurate spacial awareness given GPS, Accelerometer, and IMU sensors",
+        ],
+      },
+      {
+        name: "Air Vehicle Avionics",
+        type: "Personal Project",
+        highlights: [
+          "Custom-designed and hand-soldered PCBs using COTS microcontrollers and sensors",
+          "3D-printed avionics bays to fit in different size rockets and onto UAVs",
+          "Arduino-compatible code written to communicate with sensors over I2C, SPI, and Serial over RF between AV and Ground Station",
+          "Software written using concepts learned from State-Space Design and Methods",
+        ],
       },
       {
         name: "libdatastructures",
         type: "Personal Project",
-        description:
-          "A statically compiled, generic data structures library for me to use in later projects.",
+        highlights: [
+          "A statically compiled, generic data structures library for me to use in later projects",
+        ],
       },
       {
         name: "SelecTunes",
         type: "School Project",
-        description: "An app that allows the party to vote on the next song.",
+        highlights: [
+          "An app that allows the party to vote on the next song",
+          "Built on top of ASP.NET Core in C# with PostgreSQL/Entity Framework as the backing database with a Redis cache layer",
+        ],
       },
       {
         name: "QuestBoard",
         type: "School Project",
-        description:
-          "A kanban-style board with a gameified twist to increase fun and productivity.",
+        highlights: [
+          "A kanban-style board with a gameified twist to increase fun and productivity",
+          "Built on top of ASP.NET Core in C# with PostgreSQL/Entity Framework as the backing database",
+        ],
       },
       {
         name: "njtucker.xyz",
         type: "Personal Project",
-        description:
+        highlights: [
           "This is the repo for my public site that you are viewing right now!",
+          "Built using TS/NextJS/Tailwind CSS and deployed on Vercel",
+        ],
       },
       {
         name: "LEGv8 Disassembler",
         type: "School Project",
-        description:
+        highlights: [
           "Python project to read in assembled and linked machine code and convert it back (as best as possible) to LEGv8 assembly, a slimmer version of ARM.",
+        ],
       },
     ],
     education: [
@@ -168,37 +199,6 @@ export const getResumeInfo = () => {
         highlights: [
           "Competed against business professionals in a CTF challenge, more than doubling the points of second place",
           "Solved challenges to earn flags and gain points for the team including steganography, scripting, and network analysis",
-        ],
-      },
-    ],
-    skills: [
-      {
-        name: "Back End Development",
-        level: "3+ years",
-        keywords: [
-          "Python",
-          "Django",
-          "Azure",
-          "Springboot",
-          "AWS",
-          "C#",
-          "ASP.NET",
-          ".NET Core",
-          "Git",
-          "SQL",
-          "MongoDB",
-        ],
-      },
-      {
-        name: "Front End Development",
-        level: "1+ year",
-        keywords: [
-          "React JS",
-          "Next JS",
-          "Tailwind CSS",
-          "AWS Amplify",
-          "AWS Appsync",
-          "AWS API Gateway",
         ],
       },
     ],

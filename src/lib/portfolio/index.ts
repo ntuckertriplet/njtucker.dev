@@ -3,7 +3,7 @@ export const getPortfolio = () => {
     {
       title: "Ground Station",
       content:
-        "Check out a blog post about my custom Ground Station. I wrote the User Interface in pygame to interact and communicate with air vehicles",
+        "Check out a series about my custom Ground Station. I wrote the User Interface in pygame to interact and communicate with air vehicles",
       link: "ground-station",
     },
     {

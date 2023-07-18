@@ -8,7 +8,7 @@ type HomePageCardProps = {
 
 const HomePageCard = ({ title, content, link }: HomePageCardProps) => {
   return (
-    <Link href={`/blog/${link}`}>
+    <Link href={`/resume`}>
       <div className="flex flex-col rounded-lg shadow-md w-80 m-6 overflow-hidden bg-no-repeat bg-cover bg-center">
         <h5 className="mb-2 text-xl font-medium leading-tight p-4 m-2 text-center">
           {title}
