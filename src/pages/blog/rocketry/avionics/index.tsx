@@ -3,7 +3,7 @@ import breadboard from "../../../../../public/blog/images/breadboard.png";
 
 const Page = () => {
   return (
-    <div className="space-y-5 mt-6 w-1/2">
+    <div className="space-y-5 m-6 lg:w-3/4 xl:w-1/2">
       <h1 className="text-3xl">Disclaimer</h1>
       <p>
         I have no idea what I'm doing when it comes to PCB design. While I think
