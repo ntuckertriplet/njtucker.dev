@@ -7,19 +7,18 @@ const Page = () => {
         <div className="bg-gray-300">
           <h1 className="text-4xl p-8">Blog Entries</h1>
         </div>
-        <ul className="list-disc list-inside p-6 space-y-2">
-          <BlogLink
-            href="/ground-station"
-            text="Building a custom Ground Station in Pygame"
-          />
-          <BlogLink
-            href="/signal-processing"
-            text="Learning about and writing code for state design and signal processing"
-          />
-          <BlogLink
-            href="/rocketry"
-            text="Adventures in rocketry and building rockets"
-          />
+        <ul className="list-inside p-6">
+          <li className="text-xl font-bold">
+            Adventures in rocketry and building rockets
+          </li>
+          <ul className="list-decimal list-inside">
+            <li className="p-2 hover:underline">
+              <BlogLink
+                href="rocketry/avionics"
+                text="Building Wheatley, my custom Flight Computer"
+              />
+            </li>
+          </ul>
         </ul>
       </div>
     </div>

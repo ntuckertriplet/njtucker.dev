@@ -1,8 +1,6 @@
-import Link from "next/link";
-
 const Footer = () => {
   return (
-    <footer>
+    <footer className="mt-2">
       <div className="mb-6 flex justify-center">
         <a
           href="https://www.linkedin.com/in/nathan-tucker-a74286161/"

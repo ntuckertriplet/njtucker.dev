@@ -1,4 +1,4 @@
-export default function Home() {
+const Home = () => {
   return (
     <div className="grid place-items-center text-center">
       <h1 className="text-5xl text-gray-600 p-10">Hello, I'm Nate!</h1>
@@ -8,8 +8,13 @@ export default function Home() {
         development, all the way to Web Development in the Cloud! Currenty I am
         most interested in pursuing my High Power Rocket certifcations, making
         custom avionics for different UAVs, and exploring Guidance, Navigation,
-        and Control of Air Vehicles and Rockets
+        and Control of Air Vehicles and Rockets. I encourage you to checkout
+        some of my adventures in my blog (actively working to add entries as I
+        explore more) or check out my Resume with work-relevant experience.
+        Thanks for your time!
       </p>
     </div>
   );
-}
+};
+
+export default Home;

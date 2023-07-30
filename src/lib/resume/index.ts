@@ -103,7 +103,7 @@ export const getResumeInfo = () => {
         technologies: ["Python", "pygame", "UI/UX", "Packet design", "Arduino"],
       },
       {
-        name: "State-Space Design and Methods",
+        name: "Control Theory/State-Space Design",
         type: "Personal Project",
         highlights: [
           "A series of instruction and applied projects to experiment with and learn state-space design",
@@ -216,28 +216,6 @@ export const getResumeInfo = () => {
         startDate: "2018-08-01",
         endDate: "2022-05-01",
         gpa: "3.34",
-      },
-    ],
-    awards: [
-      {
-        title: "Best Domain",
-        date: "2018-10-01",
-        awarder: "ISU Hackathon",
-        project: "Use Your Head!",
-        highlights: [
-          "Competed at Iowa State hackathon, utilizing Javascript (pico.js, matter.js) for facial and motion tracking",
-          "Collaborated with a team of 3 to create the best website we could from the ground up in 48 hours",
-        ],
-      },
-      {
-        title: "First Place",
-        date: "2019-04-01",
-        awarder: "BSides Iowa Security Conference",
-        project: "CTF Event",
-        highlights: [
-          "Competed against business professionals in a CTF challenge, more than doubling the points of second place",
-          "Solved challenges to earn flags and gain points for the team including steganography, scripting, and network analysis",
-        ],
       },
     ],
   };
