@@ -22,6 +22,7 @@ const Page = () => {
         height={0}
         src={breadboard}
         alt="breaboard used for testing"
+        className="mx-auto"
       />
       <p>
         This board is for testing code on known-working hardware. Most, if not

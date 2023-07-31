@@ -40,7 +40,8 @@ export const getResumeInfo = () => {
       {
         company: "Lockheed Martin Skunkworks",
         position: "Software Engineer Associate",
-        website: "https://lockheedmartin.com",
+        website:
+          "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks.html",
         startDate: "2022-06-20",
         endDate: "2023-02-16",
         highlights: [

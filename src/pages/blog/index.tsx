@@ -11,11 +11,22 @@ const Page = () => {
           <li className="text-xl font-bold">
             Adventures in rocketry and building rockets
           </li>
-          <ul className="list-decimal list-inside">
+          <ul className="list-inside">
             <li className="p-2 hover:underline">
               <BlogLink
                 href="rocketry/avionics"
                 text="Building Wheatley, my custom Flight Computer"
+              />
+            </li>
+          </ul>
+          <li className="text-xl font-bold">
+            SysAdmin, On-Prem and in the Cloud
+          </li>
+          <ul className="list-inside">
+            <li className="p-2 hover:underline">
+              <BlogLink
+                href="homelab/amateur-datacenter"
+                text="A short intro to my homelab"
               />
             </li>
           </ul>
