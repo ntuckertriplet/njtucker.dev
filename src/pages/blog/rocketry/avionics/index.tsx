@@ -1,5 +1,8 @@
 import Image from "next/image";
 import breadboard from "../../../../../public/blog/images/breadboard.png";
+import pcb from "../../../../../public/blog/images/pcb.png";
+import schematic from "../../../../../public/blog/images/schematic.png";
+import wheatley3d from "../../../../../public/blog/images/wheatley3d.png";
 
 const Page = () => {
   return (
@@ -34,6 +37,14 @@ const Page = () => {
         diagnostics over serial.
       </p>
       <h2 className="text-3xl">Version 1: Wheatley</h2>
+      <Image
+        width={1000}
+        height={0}
+        src={wheatley3d}
+        alt="3D view of Wheatley"
+        className="mx-auto"
+      />
+      <h3 className="text-2xl">Defining Sensors/Requirements</h3>
       <p>
         Wheatley is the first version of my flight computer. Wheatley is meant
         to be able to control any and all vehicles I put it in. Fixed-wing
@@ -56,39 +67,33 @@ const Page = () => {
         </a>{" "}
         CAD program for PCB design and manufacturing.
       </p>
-      <h4 className="text-xl font-bold">MIMXRT1062DVJ6B (ARM Cortex-M7)</h4>
+      <h4 className="text-xl font-bold">STM32H743ZIT6</h4>
       <p>
         My reasoning behind this processor is incredibly well-informed,
         thought-out, and came down to exactly the right processor for my use
         case. No other processor would have been sufficient in my goals.
       </p>
       <p>
-        Ok that's not entirely true. There are plenty of other microprocessors
-        that would have worked and do work in custom computers. If the
-        MIMXRT1062DVJ6B processor identifier sounds familiar, it's because it's
-        the processor that's used in the{" "}
-        <a
-          href="https://www.pjrc.com/store/teensy41.html"
-          className="hover:underline"
-        >
-          Teensy 4.1 Arduino-Compatible Microcontroller by PJRC
-        </a>
-        . Why go with the Teensy Microcontroller? Familiarity with the Arduino
-        platform, support for the board on the internet, and because PJRC very
-        generously puts their{" "}
-        <a
-          href="https://www.pjrc.com/teensy/schematic.html"
-          className="hover:underline"
-        >
-          board schematics online
-        </a>
-        . What this means for me, is that I can essentially replicate a Teensy
-        board with some more sensors. See the testbed above. Code written on and
-        for that platform can be seamlessly tranplanted onto a custom PCB. Same
-        IDE, same code and pinouts, everything. For getting code tested and off
-        the ground it makes so much sense, and I can narrow down issues to a
-        hardware issue or a software issue. Controlling variables in stuff like
-        this is critical.
+        Well, that isn't entirely true. My basic requirements for a processor
+        were sufficient documentation and support for that processor, or at
+        least the family of processors, and programability. I am a software
+        engineer, anything I can do to make my life easier on the software side,
+        I am going to do. I could not have designed this board without help from{" "}
+        <a href="https://www.youtube.com/@PhilsLab" className="hover:underline">
+          Phil's Lab on YouTube
+        </a>{" "}
+        and most (if not all) of his content is centered around STM32. The
+        reason I chose this specific processor was its performance (the H7 being
+        among the high-performance family of STM32 processors) and that a
+        popular dev board uses this exact processor. It would mean that I could
+        purchase the board from a manufacturer and have, at least in theory, a
+        1:1 of my custom board to eliminate variables.
+      </p>
+      <p>
+        A third-ish reason is manufacturability. It's <em>not</em> a BGA which
+        makes my life that much easier when it comes to building the PCB and
+        doing any hand-soldering. Even some PCB fabs charge extra for BGA
+        manufacture so I will avoid it as much as I can.
       </p>
       <h4 className="text-xl font-bold">
         Bosch BNO055 (Accelerometer, Gyroscope, Magentometer, and Sensor-Fusion)
@@ -126,15 +131,99 @@ const Page = () => {
         altitude and position of an air vehicle when combined with other
         sensors.
       </p>
-      <h4 className="text-xl font-bold">Adafruit GPS</h4>
+      <h4 className="text-xl font-bold">NEO-M9N (GPS)</h4>
       <p>
-        So this one is kind of breaking the testbed rules. This GPS is not the
-        one on the final PCB. I put the least amount of stake in the GPS to be
-        able to tell me where the air vehicle is at any point in time, and
-        because of that, it has the least amount of dedicated code. Most of the
-        GNSS data is identical across GPS choices as well, so while the I
-        <sup className="font-features sups">2</sup>C query might differ
-        slightly, the data will likely not.
+        I don't have a specific reason for using this radio other than it
+        communicates over I<sup className="font-features sups">2</sup>C which is
+        far better than the sea of serial radios.
+      </p>
+      <h3 className="text-2xl">
+        The Schematic (
+        <a href="/blog/documents/schematic.pdf" className="hover:underline">
+          PDF Here
+        </a>
+        )
+      </h3>
+      <Image
+        width={1000}
+        height={0}
+        src={schematic}
+        alt="Wheatley Schematic"
+        className="mx-auto"
+      />
+      <p>
+        The schematic for Wheatley was done in a FOSS program called{" "}
+        <a href="https://kicad.github.io" className="hover:underline">
+          KiCad
+        </a>
+        . My reasoning for using it was because of how well documented and
+        supported it is, and that Phil's Lab utilizes it pretty extensively. I
+        had originally been using EAGLE, but made the transition when it was
+        announced that EAGLE would no longer be getting support and instead,
+        users were to switch over to the subscription service bundled with
+        Fusion360. This saddened me deeply.
+      </p>
+      <p>
+        The board is powered by 1 of 2 options. Firstly, you could plug in a
+        battery which delivers 12V to a DC-DC buck converter circuit that steps
+        down the voltage to 5V. This 5V rail powers the servo/stepper motors. It
+        also goes into a linear regulator that outputs 3.3V onto a power plane
+        on the board. I chose to use a linear regulator between the 5V and 3.3V
+        rails because of the lack of complexity and the lack of heat generation
+        compared to, say, 12V to 3.3V across a linear regulator. It was much
+        more simple than adding <em>another</em> buck regulator circuit as well,
+        and cuts down on cost. The other option is to plug in a USB Micro, which
+        delivers 5V to the same 5V rail. What this means is that the
+        servo/stepper motors can be powered, but anything on the 12V rail will
+        not have any power. I see this as a plus, even if it is a side effect.
+        If the computer is plugged into the board, the pyro channels can't
+        ignite. This is a complete win.
+      </p>
+      <p>
+        The sensors communicate primarily over I
+        <sup className="font-features sups">2</sup>C as shown in the schematic.
+        While something like SPI would have been quicker, it uses far more pins
+        on the STM32, is a touch more complex, and not all the sensors support
+        communication over SPI. I plan to work around this with threads or
+        multitasking through RTOS. Other board designs I've seen utilize
+        multiple processors but that just sounds like a nightmare and I wanted
+        to avoid that at all costs.
+      </p>
+      <p>
+        Currently the board supports 4 stepper motors, 2 pyro channels, and
+        outputs for UART and, again, I
+        <sup className="font-features sups">2</sup>C through pin headers.
+      </p>
+      <h3 className="text-2xl">
+        The PCB (
+        <a href="/blog/documents/pcb.pdf" className="hover:underline">
+          PDF Here
+        </a>
+        )
+      </h3>
+      <Image
+        width={1000}
+        height={0}
+        src={pcb}
+        alt="Wheatley Schematic"
+        className="mx-auto"
+      />
+      <p>
+        This part of the design process was easily the most difficult for me and
+        took the most research. It was very easy to just label a cap as 100nF,
+        for example, but to actually find one in the size designated{" "}
+        <em>in stock</em> took quite a bit of effort. Rinse and repeat for every
+        inductor, resistor, MOSFET, etc. Another difficulty was learning about
+        differential pairs, such as USB positive and negative. Thankfully, KiCad
+        has builtin support for differential pairs, but that took quite a bit of
+        fussing with the location of the USB port, the reverse polarity
+        protection, and the final traces to the STM32. Another thing I had to
+        keep in mind was trace width and heat dissipation. I guarantee there are
+        locations on this board that are sub-optimal for temperature and
+        crosstalk, but that's part of the learning process. This is my first go
+        at a PCB and I at least made <em>something</em> that I can experiment
+        with. If it's a failure, I will just make a revision 2 based on the
+        results of the first revision.
       </p>
     </div>
   );
