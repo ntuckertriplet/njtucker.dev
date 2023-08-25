@@ -33,14 +33,6 @@ const NavBar = () => {
                 Blog
               </Link>
             </li>
-            <li>
-              <Link
-                href="/blog/rocketry/avionics"
-                className="block py-2 pl-3 pr-4 rounded md:bg-transparent"
-              >
-                Avionics
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

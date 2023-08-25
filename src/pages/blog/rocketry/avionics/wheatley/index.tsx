@@ -1,8 +1,8 @@
 import Image from "next/image";
-import breadboard from "../../../../../public/blog/images/breadboard.png";
-import pcb from "../../../../../public/blog/images/pcb.png";
-import schematic from "../../../../../public/blog/images/schematic.png";
-import wheatley3d from "../../../../../public/blog/images/wheatley3d.png";
+import breadboard from "../../../../../../public/blog/images/breadboard.png";
+import pcb from "../../../../../../public/blog/images/pcb.png";
+import schematic from "../../../../../../public/blog/images/schematic.png";
+import wheatley3d from "../../../../../../public/blog/images/wheatley3d.png";
 
 const Page = () => {
   return (
@@ -139,7 +139,10 @@ const Page = () => {
       </p>
       <h3 className="text-2xl">
         The Schematic (
-        <a href="/blog/documents/schematic.pdf" className="hover:underline">
+        <a
+          href="/blog/documents/wheatley/schematic.pdf"
+          className="hover:underline"
+        >
           PDF Here
         </a>
         )
@@ -196,7 +199,7 @@ const Page = () => {
       </p>
       <h3 className="text-2xl">
         The PCB (
-        <a href="/blog/documents/pcb.pdf" className="hover:underline">
+        <a href="/blog/documents/wheatley/pcb.pdf" className="hover:underline">
           PDF Here
         </a>
         )

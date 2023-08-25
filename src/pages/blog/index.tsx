@@ -12,18 +12,24 @@ const Page = () => {
             Adventures in rocketry and building rockets
           </li>
           <ul className="list-inside">
-            <li className="p-2 hover:underline">
+            <li className="mt-2 hover:underline">
               <BlogLink
-                href="rocketry/avionics"
-                text="Building Wheatley, my custom Flight Computer"
+                href="rocketry/avionics/wheatley"
+                text="Building Wheatley, my custom Flight Computer hardware"
+              />
+            </li>
+            <li className="mt-2 hover:underline">
+              <BlogLink
+                href="rocketry/avionics/matchbox"
+                text="Matchbox, a remote rocket igniter and launch stand"
               />
             </li>
           </ul>
-          <li className="text-xl font-bold">
+          <li className="mt-2 text-xl font-bold">
             SysAdmin, On-Prem and in the Cloud
           </li>
           <ul className="list-inside">
-            <li className="p-2 hover:underline">
+            <li className="mt-2 hover:underline">
               <BlogLink
                 href="homelab/amateur-datacenter"
                 text="A short intro to my homelab"
