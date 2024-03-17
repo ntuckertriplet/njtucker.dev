@@ -13,6 +13,23 @@ const Home = () => {
         explore more) or check out my Resume with work-relevant experience.
         Thanks for your time!
       </p>
+      <div className="text-left w-1/2">
+        <ol className="relative border-l border-gray-200 mt-8 mb-8">
+          <li className="mb-10 ml-4">
+            <div className="absolute w-3 h-3 bg-gray-200 mt-1.5 -left-1.5"></div>
+            <time className="mb-1 text-sm text-gray-400 ">16 March 2024</time>
+            <h3 className="text-lg font-semibold text-gray-900">
+              Technician Class Licesnse (HAM Radio)
+            </h3>
+            <p className="mb-4 text-gray-500">
+              Took (and passed) the Technician Class License exam for HAM Radio.
+              It grants me access to All VHF/UHF Amateur bands (frequencies
+              above 30 MHz) and allows me to use COTS flight computers that
+              require licensing.
+            </p>
+          </li>
+        </ol>
+      </div>
     </div>
   );
 };
