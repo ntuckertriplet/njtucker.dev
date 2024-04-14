@@ -19,13 +19,27 @@ const Home = () => {
             <div className="absolute w-3 h-3 bg-gray-200 mt-1.5 -left-1.5"></div>
             <time className="mb-1 text-sm text-gray-400 ">16 March 2024</time>
             <h3 className="text-lg font-semibold text-gray-900">
-              Technician Class Licesnse (HAM Radio)
+              Technician Class Licesnse (Amateur Radio)
             </h3>
             <p className="mb-4 text-gray-500">
-              Took (and passed) the Technician Class License exam for HAM Radio.
-              It grants me access to All VHF/UHF Amateur bands (frequencies
-              above 30 MHz) and allows me to use COTS flight computers that
-              require licensing.
+              Took (and passed) the Technician Class License exam for Amateur
+              Radio. It grants me access to all VHF/UHF Amateur bands
+              (frequencies above 30 MHz) and allows me to use COTS flight
+              computers that require licensing.
+            </p>
+          </li>
+          <li className="mb-10 ml-4">
+            <div className="absolute w-3 h-3 bg-gray-200 mt-1.5 -left-1.5"></div>
+            <time className="mb-1 text-sm text-gray-400 ">13 April 2024</time>
+            <h3 className="text-lg font-semibold text-gray-900">
+              General and Amateur Class Licesnse (Amateur Radio)
+            </h3>
+            <p className="mb-4 text-gray-500">
+              Took (and passed) the General Class License and Amateur Extra
+              class exams for Amateur Radio. The General Class operator license
+              authorizes privileges in all 29 amateur service bands. The
+              privileges of an Amateur Extra Class operator license include
+              additional spectrum in the HF bands.
             </p>
           </li>
         </ol>
