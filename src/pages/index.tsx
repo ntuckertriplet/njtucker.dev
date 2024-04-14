@@ -19,7 +19,7 @@ const Home = () => {
             <div className="absolute w-3 h-3 bg-gray-200 mt-1.5 -left-1.5"></div>
             <time className="mb-1 text-sm text-gray-400 ">16 March 2024</time>
             <h3 className="text-lg font-semibold text-gray-900">
-              Technician Class Licesnse (Amateur Radio)
+              Technician Class License (Amateur Radio)
             </h3>
             <p className="mb-4 text-gray-500">
               Took (and passed) the Technician Class License exam for Amateur
@@ -32,7 +32,7 @@ const Home = () => {
             <div className="absolute w-3 h-3 bg-gray-200 mt-1.5 -left-1.5"></div>
             <time className="mb-1 text-sm text-gray-400 ">13 April 2024</time>
             <h3 className="text-lg font-semibold text-gray-900">
-              General and Amateur Class Licesnse (Amateur Radio)
+              General and Amateur Class License (Amateur Radio)
             </h3>
             <p className="mb-4 text-gray-500">
               Took (and passed) the General Class License and Amateur Extra
