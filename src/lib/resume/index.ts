@@ -4,7 +4,7 @@ export const getResumeInfo = () => {
       name: "Nathan Tucker",
       email: "ntuckertriplet@gmail.com",
       phone: "319-333-8509",
-      website: "http://njtucker.xyz/",
+      website: "http://njtucker.dev/",
       location: {
         city: "West Des Moines",
         countryCode: "US",
@@ -178,7 +178,7 @@ export const getResumeInfo = () => {
         ],
       },
       {
-        name: "njtucker.xyz",
+        name: "njtucker.dev",
         type: "Personal Project",
         highlights: [
           "This is the repo for my public site that you are viewing right now!",
