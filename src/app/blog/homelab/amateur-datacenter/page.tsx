@@ -4,7 +4,7 @@ import proxmox from "../../../../../public/blog/images/proxmox.png";
 import storage from "../../../../../public/blog/images/storage.png";
 import switches from "../../../../../public/blog/images/switches.png";
 
-const Page = () => {
+export default function Page() {
   return (
     <div className="space-y-5 m-6 lg:w-3/4 xl:w-1/2">
       <h1 className="text-4xl">Homelab on a Shoestring Budget</h1>
@@ -133,6 +133,4 @@ const Page = () => {
       </p>
     </div>
   );
-};
-
-export default Page;
+}

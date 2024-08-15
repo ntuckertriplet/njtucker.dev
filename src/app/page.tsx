@@ -1,4 +1,4 @@
-const Home = () => {
+export default function Page() {
   return (
     <div className="grid place-items-center text-center">
       <h1 className="text-5xl text-gray-600 p-10">Hello, I'm Nate!</h1>
@@ -46,6 +46,4 @@ const Home = () => {
       </div>
     </div>
   );
-};
-
-export default Home;
+}

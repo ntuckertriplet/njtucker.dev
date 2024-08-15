@@ -4,7 +4,7 @@ import pcb from "../../../../../../public/blog/images/pcb.png";
 import schematic from "../../../../../../public/blog/images/schematic.png";
 import wheatley3d from "../../../../../../public/blog/images/wheatley3d.png";
 
-const Page = () => {
+export default function Page() {
   return (
     <div className="space-y-5 m-6 lg:w-3/4 xl:w-1/2">
       <h1 className="text-3xl">Disclaimer</h1>
@@ -231,5 +231,3 @@ const Page = () => {
     </div>
   );
 };
-
-export default Page;

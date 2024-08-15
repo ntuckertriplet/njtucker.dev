@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import matchbox from "../../../../../../public/blog/images/matchbox/matchbox.png";
 
-const Page = () => {
+export default function Page() {
   return (
     <div className="space-y-5 m-6 lg:w-3/4 xl:w-1/2">
       <h1 className="text-3xl">
@@ -51,5 +51,3 @@ const Page = () => {
     </div>
   );
 };
-
-export default Page;

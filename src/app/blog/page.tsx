@@ -1,6 +1,6 @@
 import BlogLink from "@/components/blog-link";
 
-const Page = () => {
+export default function Page() {
   return (
     <div className="grid place-items-center p-2 xl:p-6 xl:w-1/3">
       <div className="bg-neutral-100 w-full">
@@ -41,5 +41,3 @@ const Page = () => {
     </div>
   );
 };
-
-export default Page;

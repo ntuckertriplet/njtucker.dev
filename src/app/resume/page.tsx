@@ -8,7 +8,7 @@ const formatResumeDate = (d: string) => {
   return `${month} ${_d.getFullYear()}`;
 };
 
-const Page = () => {
+export default function Page() {
   const resumeData = getResumeInfo();
 
   return (
@@ -99,5 +99,3 @@ const Page = () => {
     </div>
   );
 };
-
-export default Page;
