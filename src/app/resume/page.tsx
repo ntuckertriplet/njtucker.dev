@@ -40,14 +40,19 @@ export default function Page() {
         </a>
       </div>
       <h1 className="text-4xl mt-8 text-center">Education</h1>
-      <div className="flex justify-between">
-        <div className="font-bold">{resumeData.education[0].institution}</div>
-        <div>Grad {formatResumeDate(resumeData.education[0].endDate)}</div>
-      </div>
-      <div>
-        {resumeData.education[0].studyType}, {resumeData.education[0].area},{" "}
-        {resumeData.education[0].gpa} GPA
-      </div>
+      {resumeData.education.map((e) => {
+        return (
+          <div className="mb-2">
+            <div className="flex justify-between">
+              <div className="font-bold">{e.institution}</div>
+              <div>Grad {formatResumeDate(e.endDate)}</div>
+            </div>
+            <div>
+              {e.studyType}, {e.area}, {e.gpa} GPA
+            </div>
+          </div>
+        );
+      })}
       <h1 className="text-4xl mt-8 mb-4 text-center">Technical Experience</h1>
       <div className="space-y-4">
         {resumeData.work.map((w) => {
@@ -98,4 +103,4 @@ export default function Page() {
       </div>
     </div>
   );
-};
+}

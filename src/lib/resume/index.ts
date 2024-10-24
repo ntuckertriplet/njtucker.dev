@@ -212,6 +212,14 @@ export const getResumeInfo = () => {
     education: [
       {
         institution: "Iowa State University",
+        area: "Mechanical Engineering",
+        studyType: "Bachelor of Science",
+        startDate: "2025-01-10",
+        endDate: "May 2025",
+        gpa: "3.34",
+      },
+      {
+        institution: "Iowa State University",
         area: "Software Engineering",
         studyType: "Bachelor of Science",
         startDate: "2018-08-01",
