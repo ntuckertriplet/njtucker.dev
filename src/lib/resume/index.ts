@@ -38,6 +38,18 @@ export const getResumeInfo = () => {
         ],
       },
       {
+        company: "PrISUm Solar Car",
+        position: "Suspension/Steering Dynamicist",
+        website: "https://prisum.org",
+        startDate: "2024-10-20",
+        endDate: "",
+        highlights: [
+          "Design front suspension and steering system for performance and endurance vehicle",
+          "Utilize additive and subtractive manufacturing methods",
+          "Iterate design based on measured feedback and performance",
+        ],
+      },
+      {
         company: "Lockheed Martin Skunkworks",
         position: "Software Engineer Associate",
         website:
@@ -215,7 +227,7 @@ export const getResumeInfo = () => {
         area: "Mechanical Engineering",
         studyType: "Bachelor of Science",
         startDate: "2025-01-10",
-        endDate: "May 2025",
+        endDate: "May 2026",
         gpa: "3.34",
       },
       {
