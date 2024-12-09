@@ -1,17 +1,32 @@
+import Link from "next/link";
+
 export default function Page() {
   return (
     <div className="grid place-items-center text-center">
       <h1 className="text-5xl text-gray-600 p-10">Hello, I'm Nate!</h1>
-      <p className="p-10 md:w-1/2">
-        I am a software developer and aerospace enthusiast with experience in a
-        wide set of technologies. From embedded development to network protocol
-        development, all the way to Web Development in the Cloud! Currenty I am
-        most interested in pursuing my High Power Rocket certifcations, making
-        custom avionics for different UAVs, and exploring Guidance, Navigation,
-        and Control of Air Vehicles and Rockets. I encourage you to checkout
-        some of my adventures in my blog (actively working to add entries as I
-        explore more) or check out my Resume with work-relevant experience.
-        Thanks for your time!
+      <p className="md:w-1/2">
+        I am a software developer and motorsports enthusiast with experience
+        spanning embedded systems, network protocols, and web development in the
+        cloud. My passion extends from working on the{" "}
+        <a className="hover:underline" href="https://www.prisum.org">
+          PrISUm Solar Car
+        </a>{" "}
+        project to following endurance racing series like the World Endurance
+        Championship (WEC) and IMSA.
+      </p>
+      <p className="p-5 md:w-1/2">
+        Currently, I'm exploring High Power Rocket certifications, building
+        custom avionics for UAVs, and studying Guidance, Navigation, and Control
+        (GNC) systems for rockets and air vehicles. I dream of applying my
+        software expertise to cutting-edge motorsport technologies.
+      </p>
+      <p className="md:w-1/2">
+        Check out my blog for stories about my technical and motorsport
+        adventures (more entries coming soon!) or take a look at my{" "}
+        <Link className="hover:underline" href="/resume">
+          résumé
+        </Link>{" "}
+        for work-relevant experience. Thanks for visiting!
       </p>
       <div className="text-left w-1/2">
         <ol className="relative border-l border-gray-200 mt-8 mb-8">
