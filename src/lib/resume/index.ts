@@ -2,8 +2,6 @@ export const getResumeInfo = () => {
   return {
     basics: {
       name: "Nathan Tucker",
-      email: "ntuckertriplet@gmail.com",
-      phone: "319-333-8509",
       website: "http://njtucker.dev/",
       location: {
         city: "West Des Moines",

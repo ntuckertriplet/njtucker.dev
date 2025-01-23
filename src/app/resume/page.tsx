@@ -29,14 +29,6 @@ export default function Page() {
           rel="noopener noreferrer"
         >
           {resumeData.basics.profiles[0].url}
-        </a>{" "}
-        |{" "}
-        <a
-          className="hover:underline"
-          href={`mailto:${resumeData.basics.email}`}
-          rel="noopener noreferrer"
-        >
-          {resumeData.basics.email}
         </a>
       </div>
       <h1 className="text-4xl mt-8 text-center">Education</h1>
