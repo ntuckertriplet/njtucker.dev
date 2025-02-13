@@ -8,9 +8,7 @@ export default function Page() {
           <h1 className="text-4xl p-8">Blog Entries</h1>
         </div>
         <ul className="list-inside p-6">
-          <li className="text-xl font-bold">
-            Adventures in rocketry and building rockets
-          </li>
+          <li className="text-xl font-bold">Experimental Rocketry</li>
           <ul className="list-inside">
             <li className="mt-2 hover:underline">
               <BlogLink
@@ -36,8 +34,19 @@ export default function Page() {
               />
             </li>
           </ul>
+          <li className="mt-2 text-xl font-bold">
+            Designing and Building an L3 Rocket
+          </li>
+          <ul className="list-inside">
+            <li className="mt-2 hover:underline">
+              <BlogLink
+                href="l3/overview"
+                text="An overview into the rocket design process"
+              />
+            </li>
+          </ul>
         </ul>
       </div>
     </div>
   );
-};
+}

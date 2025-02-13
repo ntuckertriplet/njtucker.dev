@@ -5,20 +5,16 @@ export default function Page() {
     <div className="grid place-items-center text-center">
       <h1 className="text-5xl text-gray-600 p-10">Hello, I'm Nate!</h1>
       <p className="md:w-1/2">
-        I am a software developer and motorsports enthusiast with experience
-        spanning embedded systems, network protocols, and web development in the
-        cloud. My passion extends from working on the{" "}
-        <a className="hover:underline" href="https://www.prisum.org">
-          PrISUm Solar Car
-        </a>{" "}
-        project to following endurance racing series like the World Endurance
-        Championship (WEC) and IMSA.
+        I am a software developer, motorsports enthusiast, amateur rocketeer,
+        and radio hobbyist with experience spanning embedded systems, network
+        protocols, and web development in the cloud.
       </p>
       <p className="p-5 md:w-1/2">
         Currently, I'm exploring High Power Rocket certifications, building
         custom avionics for UAVs, and studying Guidance, Navigation, and Control
         (GNC) systems for rockets and air vehicles. I dream of applying my
-        software expertise to cutting-edge motorsport technologies.
+        software expertise to cutting-edge motorsport technologies and getting
+        hardware into space.
       </p>
       <p className="md:w-1/2">
         Check out my blog for stories about my technical and motorsport
@@ -26,7 +22,11 @@ export default function Page() {
         <Link className="hover:underline" href="/resume">
           résumé
         </Link>{" "}
-        for work-relevant experience. Thanks for visiting!
+        for work-relevant experience. I have some writings around{" "}
+        <Link className="hover:underline" href="/blog/l3/overview">
+          designing and building a minimum diameter L3 rocket with fiberglass
+          composites and custom avionics.
+        </Link>
       </p>
       <div className="text-left w-1/2">
         <ol className="relative border-l border-gray-200 mt-8 mb-8">
