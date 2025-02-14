@@ -42,11 +42,11 @@ export default function Page() {
       <p>
         I don't have any deadlines to meet, there are no specific launch dates I
         am planning on attending and there are no projects outstanding that
-        require an L3 certification. On one hand, I would caution rocketeers and
-        engineers to go into projects without a clear deadline and a clear
-        budget. For me though, this was advantageous as I am brand new to
-        fiberlass composites, avionics development, and HPR. It means I can take
-        my time and learn how to do a lot of complex disciplines correctly.
+        require an L3 certification. That being said, deadlines are important
+        for engineering projects to plan out work. I would like to be L3
+        Certified by Jan 1, 2026. While that depends largely on launch schedules
+        of launch sites, it sets a reasonable manugacturing and testing schedule
+        for me to be able to certify a flight.
       </p>
       <p>
         There's a big balancing game that goes on when designing and building an
