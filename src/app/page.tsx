@@ -57,6 +57,18 @@ export default function Page() {
               additional spectrum in the HF bands.
             </p>
           </li>
+          <li className="mb-10 ml-4">
+            <div className="absolute w-3 h-3 bg-gray-200 mt-1.5 -left-1.5"></div>
+            <time className="mb-1 text-sm text-gray-400 ">11 April 2025</time>
+            <h3 className="text-lg font-semibold text-gray-900">
+              L1 Rocketry Certification (Tripoli)
+            </h3>
+            <p className="mb-4 text-gray-500">
+              Launched a kit rocket with an H219 motor. Successfully recovered
+              the rocket from an altitude of ~1,500 ft. The rocket is currently
+              being converted to dual-deploy and will be used for L2.
+            </p>
+          </li>
         </ol>
       </div>
     </div>
