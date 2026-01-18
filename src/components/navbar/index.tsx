@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavLink from "../nav-link";
 
 const NavBar = () => {
   return (
@@ -9,30 +10,10 @@ const NavBar = () => {
           id="navbar-sticky"
         >
           <ul className="flex p-0 md:p-2 lg:pt-4 font-medium border border-gray-100 rounded-lg bg-neutral-100 md:flex-row md:space-x-8 md:border-0">
-            <li>
-              <Link
-                href="/"
-                className="block py-2 pl-3 pr-4 rounded md:bg-transparent"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/resume"
-                className="block py-2 pl-3 pr-4 rounded md:bg-transparent"
-              >
-                Resume
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/blog"
-                className="block py-2 pl-3 pr-4 rounded md:bg-transparent"
-              >
-                Blog
-              </Link>
-            </li>
+            <NavLink title="Home" href="/" />
+            <NavLink title="Resume" href="/resume" />
+            <NavLink title="Blog" href="/blog" />
+            <NavLink title="Bike Visualizer" href="/bike-viz" />
           </ul>
         </div>
       </div>

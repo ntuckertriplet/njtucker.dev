@@ -23,28 +23,27 @@ export const getResumeInfo = () => {
     },
     work: [
       {
+        company: "MidAmerican Energy Company",
+        position: "Software Engineer II",
+        website: "https://www.midamericanenergy.com",
+        startDate: "2025-10-06",
+        endDate: "",
+        highlights: [
+          "Develop and sustain Oracle Field Service applications for field workforce",
+          "Integrate OFS with other enterprise systems using RESTful APIs and middleware solutions",
+        ],
+      },
+      {
         company: "Wellmark BCBS",
         position: "Software Engineer",
         website: "https://wellmark.com",
         startDate: "2023-02-20",
-        endDate: "",
+        endDate: "2025-10-03",
         highlights: [
           "Support enterprise-wide authentication platforms and develop new, improved solutions",
           "Migrate existing software to the cloud in AWS, or reimplement as needed",
           "Worked in an Agile environment, releasing often to customers for software review and revision",
           "Created SSO SAML integrations for dozens of clients to utilize Wellmark as their SSO provider",
-        ],
-      },
-      {
-        company: "PrISUm Solar Car",
-        position: "Suspension/Steering Dynamicist",
-        website: "https://prisum.org",
-        startDate: "2024-10-20",
-        endDate: "",
-        highlights: [
-          "Design front suspension and steering system for performance and endurance vehicle",
-          "Utilize additive and subtractive manufacturing methods",
-          "Iterate design based on measured feedback and performance",
         ],
       },
       {
@@ -220,14 +219,6 @@ export const getResumeInfo = () => {
       },
     ],
     education: [
-      {
-        institution: "Iowa State University",
-        area: "Mechanical Engineering",
-        studyType: "Bachelor of Science",
-        startDate: "2025-01-10",
-        endDate: "May 2026",
-        gpa: "3.34",
-      },
       {
         institution: "Iowa State University",
         area: "Software Engineering",
