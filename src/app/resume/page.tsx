@@ -12,7 +12,7 @@ export default function Page() {
   const resumeData = getResumeInfo();
 
   return (
-    <div className="m-6 lg:w-3/4 xl:w-1/2">
+    <div className="m-6 lg:w-3/4 xl:w-3/5">
       <h1 className="text-5xl mt-8">{resumeData.basics.name}</h1>
       <div>
         <a

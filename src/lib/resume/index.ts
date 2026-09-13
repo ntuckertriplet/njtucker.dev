@@ -29,8 +29,20 @@ export const getResumeInfo = () => {
         startDate: "2025-10-06",
         endDate: "",
         highlights: [
-          "Develop and sustain Oracle Field Service applications for field workforce",
-          "Integrate OFS with other enterprise systems using RESTful APIs and middleware solutions",
+          "Integrate Custom plugins into Oracle Cloud and Oracle Field Services",
+          "Architect solutions and implement Oracle NMS into existing infrastructure",
+        ],
+      },
+      {
+        company: "Iowa Army National Guard",
+        position: "All-Source Intelligence Analyst",
+        website: "https://www.iowanationalguard.com",
+        startDate: "2025-10-01",
+        endDate: "",
+        highlights: [
+          "Produced intelligence assessments and threat analyses to support commanders and staff in planning and decision-making",
+          "Evaluated conflicting information from multiple intelligence sources to develop data-driven assessments",
+          "Collaborated with personnel and offices across multiple echelons to coordinate information and support mission objectives",
         ],
       },
       {
@@ -44,6 +56,19 @@ export const getResumeInfo = () => {
           "Migrate existing software to the cloud in AWS, or reimplement as needed",
           "Worked in an Agile environment, releasing often to customers for software review and revision",
           "Created SSO SAML integrations for dozens of clients to utilize Wellmark as their SSO provider",
+        ],
+      },
+      {
+        company: "ISEAGE Research Lab",
+        position: "Research Lab Assistant",
+        website: "https://cdc.iseage.org",
+        startDate: "2019-06-01",
+        endDate: "2026-10-01",
+        highlights: [
+          "Managed/directed Cyber Defense Competitions for high school, community college, Iowa State, and international users",
+          "Developed intentionally vulnerable applications and host systems",
+          "Planned and executed several different system architectures and designs",
+          "Managed releases and updates on Windows Server, Linux/BSD, ESXi, vCenter, and application code with Python and C#",
         ],
       },
       {
@@ -85,19 +110,6 @@ export const getResumeInfo = () => {
           "Automate security infrastructure and deployment with Terraform and Cloudformation templates",
           "Experiment with open source penetration testing tools and frameworks to exploit vulnerabilities",
           "Use vulnerability and networking analysis tools such as OWASP ZAP Web App fuzzer, Burpsuite, Wireshark, and command line utilities",
-        ],
-      },
-      {
-        company: "ISEAGE Research Lab",
-        position: "Research Lab Assistant",
-        website: "https://cdc.iseage.org",
-        startDate: "2019-06-01",
-        endDate: "2022-05-01",
-        highlights: [
-          "Directed multiple Cyber Defense Competitions for high school, community college, and national college students",
-          "Developed intentionally vulnerable applications and environments for students to defend and attack",
-          "Planned and executed unique scenarios for each competition",
-          "Systems Administration with vCenter products and various networking setups",
         ],
       },
     ],
