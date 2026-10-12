@@ -2,21 +2,21 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="grid place-items-center text-center">
+    <div className="grid place-items-center text-center md:w-1/2">
       <h1 className="text-5xl text-gray-600 p-10">Hello, I'm Nate!</h1>
-      <p className="md:w-1/2">
+      <p className="p-5">
         I am a software developer, motorsports enthusiast, amateur rocketeer,
         and radio hobbyist with experience spanning embedded systems, network
         protocols, and web development in the cloud.
       </p>
-      <p className="p-5 md:w-1/2">
+      <p className="p-5">
         Currently, I'm exploring High Power Rocket certifications, building
         custom avionics for UAVs, and studying Guidance, Navigation, and Control
         (GNC) systems for rockets and air vehicles. I dream of applying my
         software expertise to cutting-edge motorsport technologies and getting
         hardware into space.
       </p>
-      <p className="md:w-1/2">
+      <p className="p-5">
         Check out my blog for stories about my technical and motorsport
         adventures (more entries coming soon!) or take a look at my{" "}
         <Link className="hover:underline" href="/resume">
@@ -28,7 +28,7 @@ export default function Page() {
           composites and custom avionics.
         </Link>
       </p>
-      <div className="text-left w-1/2">
+      <div className="text-left ml-2">
         <ol className="relative border-l border-gray-200 mt-8 mb-8">
           <li className="mb-10 ml-4">
             <div className="absolute w-3 h-3 bg-gray-200 mt-1.5 -left-1.5"></div>
